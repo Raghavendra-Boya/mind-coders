@@ -1,0 +1,51 @@
+/*
+WHat is CSS:
+ways apply to css:
+1. inline css
+
+we are going to appllu inline css inside the opening tag by using style attributye
+
+
+
+adv: 
+1. easy to apply
+2. aplicable for single page application
+
+dis adv:
+1. lines of code is invreasing
+2. time consuming
+3. duplicate code
+
+
+2. internal CSS
+we are going to apply Internal CSS inside the head tag by using style tags
+
+adv:
+
+1. reduce the code
+2. save the time
+3. mediaum internal css
+
+dis adv:
+1. code will be duplicated from page to page
+
+
+3. external CSS:
+
+
+
+
+
+
+*/
+
+a{
+    color:green;
+    background-color: black;
+    width:100%;
+    display: block;
+}
+
+h2{
+    color:green;
+}

@@ -1,0 +1,42 @@
+/* LTR (Left to Right) Scrolling */
+.banner-container {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.banner-container img {
+    max-width: 150px;
+    height: 5rem;
+    padding: 0 15px;
+    object-fit: cover;
+}
+
+.banner-container img:last-of-type {
+    padding-left: 0;
+}
+
+.banner-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 5rem;
+}
+
+.banner-wrapper {
+    display: flex;
+    animation: swipe-ltr var(--speed) linear infinite;
+}
+
+.banner-section {
+    display: flex;
+    min-width: 100%;
+}
+
+@keyframes swipe-ltr {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
