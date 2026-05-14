@@ -1,0 +1,63 @@
+/*
+1, content
+2. padding
+3. border
+4. margin
+
+
+*/
+
+.box{
+    width:300px;
+    height: 150px;
+    background-color:rgb(45, 45, 46);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: white;
+    padding: 50px 30px;
+    margin: auto;
+    border: 10px solid red;
+    border-radius:10% 10%;
+    box-sizing:border-box;
+}
+
+/* .container{
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .box-1{
+    margin-bottom: 100px;
+}
+.box-2{
+    margin-top: 200px;
+} */
+
+
+.card{
+    width:300px;
+    background-color: rgb(133, 130, 130);
+    padding:20px;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px black;
+}
+.card img{
+    width: 100%;
+    border-radius:10px;
+}
+.card button{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius:10px;
+    cursor: pointer;
+}
+.card button:hover{
+    background-color: rgb(43, 43, 43);
+    box-shadow: 0px 0px 12px 2px red ;
+}

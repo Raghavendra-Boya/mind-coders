@@ -1,0 +1,134 @@
+/*
+1Selectoers:
+
+the are selectors are used to selcet the elemnets from HTML afile and apply Styles
+
+1. Global Selctor(*)
+2. tag selector(tagname)
+3. class(.):
+class="className"
+4. ID selector(#):
+5.group selctor(,)
+6. pseudo class selector(:)
+selector:pseudo class{
+property: values:
+}
+    1. hover:
+        applies styles when mouse isplaced on elemnt
+    2. :active
+        applies styles when elemnt is clicked
+    3.:focus
+        applies styles when iput gets focused
+    4. :visited
+        styles visited links
+    5. :link
+        tragets unvisited links
+    6. :first-child
+    targets fist child elemnt from parent
+
+7. speudo-ELement Selector(::)
+    1. ::before
+        adds the content before the element
+8. combinationation selector
+    1. child selector
+        1. direct child selector(>)
+        2. indirect child selector/descendent child selector(space)
+    2. sibling selectors
+        1. adjacent sibling slector(+)
+        2. General Sibling(~)
+9. attribute selector([])
+targets the elements by using attributes
+
+    1. has attribute    [type]
+        img,video,audio[src]
+    2. exact value      [type="text"]
+    3. starts with (^)  [class^="box"]
+    4. ends with ($)   [src$="jpg"]
+    5. contains(*)     [src*="photo"]
+*/
+
+
+*{
+    margin:0px;
+    padding:0px;
+    border 0px;
+}
+
+.heading_2{
+    color:red;
+}
+#btn{
+    background-color:blue;
+}
+
+.heading_2,#btn,p{
+    background-color: aqua;
+}
+
+/* #btn:hover{
+   background-color: black;
+    color: white;
+    width: 200px;
+} */
+
+#btn:active{
+    background-color: red;
+    transform: scale(1.5);
+}
+
+input:focus{
+    outline: none;
+    border: 3px solid blue;
+}
+
+a:visited{
+    color: green;
+}
+
+a:link{
+    color:red;
+}
+
+li:nth-child(2n){
+    color:blueviolet;
+    font-size: 30px;
+}
+input:checked{
+    width:30px;
+    height:30px;
+    display: none;
+}
+
+.hide{
+    visibility:hidden;
+}
+
+.before::after{
+    content: "Before ";
+}
+.before::first-line{
+    font-size: 30px;
+    color:red;
+}
+.before::selection{
+    background-color: black;
+    color:white;
+}
+input::placeholder{
+    color: red;
+}
+
+/* li::marker{
+    color: blue;
+    font-size:100px;
+} */
+
+
+.container p{
+    color:red;
+}
+
+
+h1 ~ p{
+    background-color: green;
+}
