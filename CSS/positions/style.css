@@ -1,0 +1,124 @@
+/*
+WHat is Positions:
+positions controls how an element is placed in web page
+
+
+-->where element should disply
+--->how it moves
+--->whether it ovelaps other elements
+
+types of positions:
+1. static(default)
+2. relative
+3. absolute
+4. fixed
+5. sticky
+
+properties:
+top
+bottom
+left
+right
+z-index
+
+
+
+*/
+
+/* body{
+    padding: 50px;
+}
+.box{
+    width:150px;
+    height: 150px;
+    background-color:aqua;
+
+}
+.static{
+    position:static;
+    top:100px;
+}
+
+.relative{
+    position: relative;
+    top:100px;
+    left:200px;
+}
+.absolute{
+    position:absolute;
+    top:100px;
+}
+.parent{
+    position: relative;
+    background-color: gray;
+    width:50%;
+    height:300px;
+    left:300px;
+}
+.fixed{
+    position:fixed;
+    top:20px;
+    
+    right:0px;
+}
+.sticky{
+    position:sticky;
+    top:400px;
+    left:300px
+} */
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+header{
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:15px 0px;
+    position:fixed;
+    top:0px;
+    width:100%;
+}
+.banner{
+    background-color:gray;
+    height:300px;
+
+}
+.banner img{
+    height:300px;
+}
+.banner h2{
+    position:relative;
+    bottom:200px;
+    left:350px;
+}
+.card{
+    width:200px;
+    border: 2px solid black;
+    position:relative;
+}
+.card img{
+    width:100%;
+}
+.container{
+    display: flex;
+    justify-content:space-between;
+}
+.card span{
+    position:absolute;
+    top:10px;
+    right:10px;
+    background-color:red;
+    color:white;
+    padding:10px;
+
+}
+
+.up-btn{
+    background-color:blue;
+    position: sticky;
+    top:500px;
+   left:900px;
+}
