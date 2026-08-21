@@ -1,0 +1,110 @@
+/*
+-color
+-image
+-position
+-repeat
+-size
+-attachment
+
+All background properties:
+
+background-color:
+background-image:
+background-position:
+background-repeat:
+background-size:
+background-attachment:
+backrund-origin:
+background-clip:
+background:
+linear-gradient:
+radial-gradient:
+conic-gradient:
+*/
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.box{
+    width:300px;
+    height:200px;
+    border: 5px solid white;
+    color:white;
+    font-size:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+.box1{
+    background-color: blue;
+}
+.img1{
+    background-image: url("https://picsum.photos/300/200");
+}
+
+.repeat1{
+  background-image: url("https://picsum.photos/120"); 
+  background-repeat: repeat-y; 
+}
+
+.pos1{
+  background-image: url("https://picsum.photos/100"); 
+  background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.size1{
+    background-image: url("https://picsum.photos/200/100");
+    background-size: 100% 80%;
+}
+
+.scroll{
+    background-image: url("https://picsum.photos/300/200");
+    background-attachment: scroll;
+}
+
+.local{
+    background-image: url("https://picsum.photos/300/200");
+    background-attachment: local;
+}
+.origin1{
+    background-image: url("https://picsum.photos/150");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin: border-box;
+    border: 15px dashed white;
+}
+.origin2{
+    background-image: url("https://picsum.photos/150");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin: padding-box;
+    border: 15px dashed white;
+    padding: 50px;
+}
+.origin3{
+    background-image: url("https://picsum.photos/150");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin: content-box;
+    border: 15px dashed white;
+    padding: 50px;
+
+}
+
+.linear{
+    background: conic-gradient(red, blue,green, yellow);
+}
