@@ -25,7 +25,7 @@ z-index
 
 */
 
-/* body{
+body{
     padding: 50px;
 }
 .box{
@@ -65,7 +65,7 @@ z-index
     position:sticky;
     top:400px;
     left:300px
-} */
+}
 
 *{
     margin:0px;

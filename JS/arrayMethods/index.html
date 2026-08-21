@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+</head>
+
+<body class="bg-light">
+    <!-- <button onclick="showProducts()">page-1</button>
+    <div id="products"></div> -->
+
+
+    <nav class="navbar navbar-dark bg-dark px-4">
+
+        <a class="navbar-brand fs-3">
+            Amazon
+        </a>
+
+        <button class="btn btn-warning position-relative" onclick="displayCart()">
+
+            Cart
+
+            <span id="cartCount"
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
+                0
+
+            </span>
+
+        </button>
+
+    </nav>
+
+    <section class="container py-5">
+        <h1 class="text-center mb-4">Products</h1>
+        <div class="text-center mb-4">
+            <button onclick="prevPage()">prev</button>
+            <button class="btn btn-primary me-2" onclick="showProducts(1)">Page-1</button>
+            <button class="btn btn-success me-2" onclick="showProducts(2)">Page-2</button>
+            <button class="btn btn-danger me-2" onclick="showProducts(3)">Page-3</button>
+            <button onclick="nextPage()">Next</button>
+        </div>
+        <div id="products" class="row g-4"></div>
+    </section>
+
+    <hr>
+
+    <div class="container mt-5">
+
+    <h2 class="text-center">Shopping Cart</h2>
+
+    <div id="cart"></div>
+
+</div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
